@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ចលនាធំ និង ចលនាតូច — សម្រាប់កុមារពិសេស</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bayon&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    /* ======================
+       STYLE (Embedded CSS)
+       Designed for readability, accessibility & print
+       ====================== */
+    :root{
+      --bg: #f6fff7;
+      --card: #ffffff;
+      --accent: 	#2e8b57;
+      --accent-2: #e75688;
+      --muted: #6b6b6b;
+      --glass: rgba(255,255,255,0.7);
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:  "Hanuman", system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif;
+      background: linear-gradient(135deg,var(--bg),#fff5fb 120%);
+      color:#1b1b1b;
+      margin:0;padding:24px;
+      -webkit-font-smoothing:antialiased;
+      line-height:1.45;
+    }
+    .wrap{max-width:1100px;margin:0 auto}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+    .logo{width:72px;height:72px;border-radius:12px;background:linear-gradient(180deg,var(--accent),#98d8b2);display:flex;align-items:center;justify-content:center;color:#fff;font-size:36px}
+    h1{font-size:20px;margin:0;color:var(--accent)}
+    p.lead{margin:6px 0 18px;color:var(--muted)}
+
+    /* Cards grid */
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .card{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(50,50,93,0.06);border:1px solid rgba(46,139,87,0.06)}
+    .card h3{margin:0 0 8px;color:var(--accent)}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+
+    /* Activity list */
+    .activity{display:flex;gap:12px;align-items:flex-start;padding:8px;border-radius:10px}
+    .act-emoji{font-size:22px;margin-top:2px}
+    .act-body{flex:1}
+    .act-title{font-weight:700;color:#333;margin-bottom:6px}
+    .act-steps{font-size:13px;color:var(--muted);margin:0}
+
+    /* Checklist / Tracker */
+    .tracker{display:flex;gap:12px;align-items:flex-start}
+    .progress{flex:1}
+    .progress ul{list-style:none;padding:0;margin:0}
+    .progress li{display:flex;gap:10px;align-items:center;padding:8px;border-radius:8px;border:1px dashed rgba(0,0,0,0.04);margin-bottom:8px}
+    input[type=checkbox]{width:20px;height:20px}
+    label.small{font-size:14px;color:#333}
+
+    /* Detail sections */
+    .details{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-top:14px}
+    .tips{background:linear-gradient(180deg,#fff,#f8fff9);padding:12px;border-radius:12px}
+    .print-btn{display:inline-block;margin-top:8px;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+
+    /* Accessible table */
+    table{width:100%;border-collapse:collapse;margin-top:8px}
+    th,td{padding:10px;border:1px solid #f0f0f0;text-align:left}
+    th{background:var(--accent);color:#fff}
+
+    /* responsive */
+    @media (max-width:880px){
+      .grid{grid-template-columns:1fr}
+      .details{grid-template-columns:1fr}
+    }
+
+    /* Print-friendly */
+    @media print{
+      body{background:white;color:#000}
+      .logo,.print-btn{display:none}
+      .wrap{margin:0;padding:0}
+      a::after{content:''}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <div class="logo" aria-hidden="true"><img src="logo.png" alt="" width="60px"></div>
+      <div>
+        <h1>ចលនាធំ និង ចលនាតូច — សម្រាប់កុមារពិសេស</h1>
+        <p class="lead">ឯកសារនេះមានសកម្មភាព យុទ្ធសាស្ត្រ និងតារាងតាមដាន សមរម្យសម្រាប់កុមារដែលមានតម្រូវការាពិសេស (Autism, Down syndrome, ADHD, Developmental Delay ...)</p>
+      </div>
+    </header>
+
+    <section class="grid" aria-labelledby="intro-grid">
+      <article class="card" id="fine">
+        <h3>✋ ចលនាតូច (Fine Motor)</h3>
+        <p>ចលនាតូចទាក់ទងនឹង សាច់ដុំតូចៗ — ម្រាមដៃ បបូរមាត់។ វាជាជំនាញសម្រាប់សរសេរ កាត់ កាន់ និងបញ្ចូលវត្ថុតូចៗ។</p>
+        <div style="margin-top:10px">
+          <strong>បញ្ហាធម្មតា:</strong>
+          <ul>
+            <li>ចាប់ខ្មៅដៃបានមិនច្បាស់</li>
+            <li>ការសរសេរ និងកាត់ក្រដាសលំបាក</li>
+            <li>ការសម្របសម្រួលភ្នែក-ដៃខ្សោយ</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card" id="gross">
+        <h3>🦵 ចលនាធំ (Gross Motor)</h3>
+        <p>ចលនាធំទាក់ទងនឹងសាច់ដុំធំៗ — ដើរ រត់ លោត និងតុល្យភាព។ វាជាសមត្ថភាពសម្រាប់សុខភាព និងចលនាទីលាន។</p>
+        <div style="margin-top:10px">
+          <strong>បញ្ហាធម្មតា:</strong>
+          <ul>
+            <li>តុល្យភាពខ្សោយ ងាយដួល</li>
+            <li>កម្លាំងជើង/ដៃអន់</li>
+            <li>ការចូលរួមក្នុងល្បែងក្រុមមានអាក្រក់</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <!-- Activities list -->
+    <section style="margin-top:14px">
+      <div class="card">
+        <h3>សកម្មភាពជាក់លាក់ (Activity Ideas)</h3>
+        <div class="activity">
+          <div class="act-emoji">🧩</div>
+          <div class="act-body">
+            <div class="act-title">Lego ឬប៊្លុកធំ (Begin with large pieces)</div>
+            <p class="act-steps">ធ្វើជំហានតូចៗ: រួមគ្នាធ្វើម៉ូឌែល ២–៣ ដុំ → ចាប់ដាក់ → បកដោះ។ ជួយលើកសមត្ថភាពចាប់ និងបញ្ចូល។</p>
+          </div>
+        </div>
+
+        <div class="activity">
+          <div class="act-emoji">✂️</div>
+          <div class="act-body">
+            <div class="act-title">កាត់ក្រដាសដោយកន្ត្រៃ (Scissor skills)</div>
+            <p class="act-steps">ចាប់ផ្តើមជាមួយក្រដាសធន់ និងកន្ត្រៃមានសុវត្ថិភាព។ សិក្សាផ្នែកលើ-ក្រោមជំហាន និងទទួលស្គាល់សញ្ញាព្រមទាំងពិន្ទុ។</p>
+          </div>
+        </div>
+
+        <div class="activity">
+          <div class="act-emoji">🎯</div>
+          <div class="act-body">
+            <div class="act-title">បោះបាល់តូច / ទម្លាក់គ្រាប់</div>
+            <p class="act-steps">ប្រើបាល់ខ្នាតធំឬធន់ដើម្បីលើកកំហែងបោះ និងខ្សោយ—ជួយសម្របសម្រួលដៃ-ភ្នែក។</p>
+          </div>
+        </div>
+
+        <div class="activity">
+          <div class="act-emoji">🍽️</div>
+          <div class="act-body">
+            <div class="act-title">សំរាប់ភាពឯករាជ្យ (Feeding practice)</div>
+            <p class="act-steps">ប្រើស្លាបព្រា និងពែងធំមុន → បង្រៀនថ្នាក់បបូរមាត់ → ជួយទទួលខុសត្រូវ។</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Tracker and tips -->
+    <section class="details">
+      <div class="card progress">
+        <h3>តារាងតាមដានសមត្ថភាព (Progress Tracker)</h3>
+        <p style="margin:0 0 8px;color:var(--muted)">ទុកសំគាល់ប្រចាំសប្តាហ៍/ខែ — ពិនិត្យ និងខ្សែតាមដានជំហាននិទាឃរដូវ</p>
+        <ul>
+          <li><input id="c1" type="checkbox"><label for="c1" class="small"> ចាប់វត្ថុតូចបានច្បាស់ (pinch/grasp)</label></li>
+          <li><input id="c2" type="checkbox"><label for="c2" class="small"> ប្រើស្លាបព្រាអាចបរិភោគដោយខ្លួនឯង</label></li>
+          <li><input id="c3" type="checkbox"><label for="c3" class="small"> តុល្យភាពល្អ — ដើរត្រង់ 10m</label></li>
+          <li><input id="c4" type="checkbox"><label for="c4" class="small"> លោតពីកម្រិតតិចៗដោយស្រួល</label></li>
+          <li><input id="c5" type="checkbox"><label for="c5" class="small"> សម្របសម្រួលភ្នែក-ដៃ (targeting)</label></li>
+        </ul>
+
+        <p style="margin-top:10px;color:var(--muted);font-size:13px"><strong>សម្គាល់:</strong> ប្រើកំណត់ថ្ងៃជាក់លាក់ (ឧ. 2025-11-05) និងចុះតុល្យភាព/ដំណើរការ។</p>
+        <a href="#" class="print-btn" onclick="window.print();return false;">🖨️ Print / Save PDF</a>
+      </div>
+
+      <aside class="card tips" aria-label="Tips for caregivers">
+        <h3>យុទ្ធសាស្ត្រសម្រាប់អ្នកបង្រៀន និងឪពុកម្តាយ</h3>
+        <ul>
+          <li>បំបែកកិច្ចការជាជំហានតូចៗ និងប្រើ visual cue (រូបភាព/សញ្ញា)</li>
+          <li>ប្រើសម្ភារៈធំៗជាមុនសម្រាប់ទម្លាប់ការចាប់</li>
+          <li>ផ្តល់ពង្រឹងយ៉ាងឆាប់និងច្រើន (praise & small rewards)</li>
+          <li>ព្យាយាមធ្វើវាជាការលេង — មិនចង្អៀតកុមារ</li>
+          <li>ធ្វើការត្រួតពិនិត្យបន្តិចៗ ហើយកំណត់គោលដៅតិចៗដែលអាចសម្រេចបាន</li>
+        </ul>
+
+        <h4 style="margin-top:8px;color:var(--accent-2)">Quick adaptations</h4>
+        <p style="margin:0;color:var(--muted);font-size:13px">Use adaptive tools: larger pencils, textured grips, non-slip mats, weighted cutlery, and supportive seating (wedge cushions).</p>
+      </aside>
+    </section>
+
+    <!-- Accessible detailed table -->
+    <section style="margin-top:14px" class="card">
+      <h3>ព្រឹត្តិប័ត្រ៖ សកម្មភាពសម្រាប់ប្រើជារៀងរាល់សប្តាហ៍</h3>
+      <table aria-describedby="legend">
+        <thead>
+          <tr>
+            <th>សកម្មភាព</th>
+            <th>លក្ខណៈ</th>
+            <th>គោលដៅ</th>
+            <th>កម្រិតងាយ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ចាប់ប៊្លុក ធំ → តូច</td>
+            <td>ចាប់, ដាក់, បញ្ចេញ</td>
+            <td>ពង្រឹង pinch និង coordination</td>
+            <td>ងាយ → មធ្យម</td>
+          </tr>
+          <tr>
+            <td>កាត់ក្រដាសដាមគន្លង</td>
+            <td>កាត់, តាមបន្ទាត់</td>
+            <td>ប្រើកន្ត្រៃ និងដៃដែលអាចគ្រប់គ្រង</td>
+            <td>មធ្យម</td>
+          </tr>
+          <tr>
+            <td>បោះបាល់ទៅគោលដៅ</td>
+            <td>បោះ, គោលដៅ</td>
+            <td>coordination & targeting</td>
+            <td>ងាយ</td>
+          </tr>
+          <tr>
+            <td>ដើរលើបន្ទាត់ (balance beam)</td>
+            <td>តុល្យភាព</td>
+            <td>balance & core stability</td>
+            <td>មធ្យម → ពិបាក</td>
+          </tr>
+        </tbody>
+      </table>
+      <p id="legend" style="margin-top:8px;color:var(--muted);font-size:13px">*Legend: Adapt tools to the child's needs — use larger grips, textured surfaces, or adult support as needed.</p>
+    </section>
+
+    <footer style="margin-top:18px;text-align:center;color:var(--muted);font-size:13px">
+      <p>Created for caregivers & teachers • Feel free to adapt, translate or print for classroom use.</p>
+    </footer>
+  </div>
+</body>
+</html>
